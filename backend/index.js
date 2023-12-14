@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require('cors');
+const cors = require("cors");
 require("dotenv/config");
 
 const { connectMongoDB } = require("./connection");
@@ -14,7 +14,13 @@ const PORT = process.env.PORT || 3000;
 const DB_CONNECTION = process.env.DB_CONNECTION;
 
 // Middlewares
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://result-management-system-mern.vercel.app/"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
