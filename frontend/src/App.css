@@ -1,0 +1,508 @@
+/* Header */
+
+header {
+  height: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #1c1e29;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.backLogo {
+  height: 25px;
+}
+
+.headerBtn {
+  border: none;
+  padding: 0px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logoutBtn,
+.backBtn {
+  background: #1c1e29;
+  margin: 10px;
+  color: #b3b5b8;
+}
+
+.logoutBtn:hover{
+  color: #fff;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+}
+
+footer a {
+  color: #4aee88;
+}
+
+footer a:hover {
+  color: #368654;
+  border-color: #368654;
+}
+
+/* HomePage */
+
+.mainHomePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  height: 100vh;
+  background: #1c1e29;
+}
+
+.homeHeading {
+  position: fixed;
+  top: 0;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+}
+
+.orSeperator {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.leftSeperator,
+.rightSeperator {
+  border: 1px solid #d0d0d0;
+  width: 160px;
+}
+
+.homeBtn {
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 400px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.studentBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  color: #1d9bf0;
+}
+
+.teacherBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.createBtn {
+  background: #1d9bf0;
+  color: #fff;
+}
+
+.logo {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.teacherBtn:hover,
+.studentBtn:hover {
+  background: #d0d0d0;
+}
+
+.createBtn:hover {
+  background: #007dd0;
+}
+
+/* Common-Login */
+
+.login {
+  height: calc(100vh - 50px);
+  background: #1c1e29;
+}
+
+.loginWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: calc(100vh - 50px);
+}
+
+.formWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.loginLogo {
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.mainLabel {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputBox {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.primaryBtn {
+  background: #4aed88;
+  width: 100px;
+}
+
+.primaryBtn:hover {
+  background: #2b824c;
+}
+
+/* Student-Login */
+
+.clearBtn {
+  color: #000000;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.clearBtn:hover {
+  background: #9c9c9c;
+}
+
+/* Teacher-Dashboard */
+
+.container {
+  height: calc(100vh - 50px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.topBar {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.wrapper {
+  width: 60%;
+  height: 75%;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+}
+
+.table thead th,
+.table tbody td {
+  vertical-align: bottom;
+  border-bottom: 1px solid #dee2e6;
+  padding: 5px;
+}
+
+.tableFixHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tableFixHead tbody tr td{
+overflow: hidden;
+} 
+
+th,
+td {
+  text-align: center;
+}
+
+.actionButton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+::backdrop {
+  background: #1c1e29;
+  opacity: 0.75;
+}
+
+.form-body {
+  background: #1c1e29;
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.editLogo,
+.deleteLogo {
+  height: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #aa2633;
+  border-color: #aa2633;
+}
+
+.iconBtn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.closeLogo {
+  height: 25px;
+}
+
+.form-content .form-items {
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  min-width: 540px;
+  text-align: left;
+  transition: all 0.4s ease;
+}
+
+.form-content h3 {
+  color: #fff;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-content label,
+.was-validated .form-check-input:invalid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color: #fff;
+}
+
+.form-content input[type="text"],
+.form-content input[type="date"],
+.form-content input[type="number"],
+.form-content select {
+  width: 100%;
+  padding: 9px 20px;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+}
+
+#editRollNo{
+  background-color: #9c9c9c;
+  cursor: default;
+}
+
+.addBtn,
+.updateBtn {
+  background-color: #4aed88;
+  outline: none;
+  border: 0px;
+  box-shadow: none;
+}
+
+.updateBtn{
+  margin-top: 10px;
+}
+
+.addBtn:hover,
+.updateBtn:hover {
+  background-color: #008a35;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+/* Student Dashboard */
+
+.topBarStudent {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.tableResult {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.tableRow {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tableHeading {
+  margin-bottom: 10px;
+}
+
+.tableData {
+  margin-bottom: 10px;
+  color: #2acc80;
+}
+
+/* Scrollbar */
+
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+  border-radius: 6px; /* round corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2980b9;
+}
+
+/* Add a subtle shadow to the scrollbar handle */
+::-webkit-scrollbar-thumb:active {
+  background-color: #1f618d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Change the color of the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: #f5f5f5;
+}
