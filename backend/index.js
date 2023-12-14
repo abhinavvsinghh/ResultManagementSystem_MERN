@@ -30,6 +30,9 @@ connectMongoDB(DB_CONNECTION)
   .catch((error) => console.log("Mongo Error", error));
 
 // Routes
+app.get('/',(req,res)=>{
+  res.json('Hello');
+})
 app.use("/student", studentRouter);
 app.use("/teacher", teacherRouter);
 
