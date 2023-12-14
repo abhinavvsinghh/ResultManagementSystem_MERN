@@ -16,7 +16,7 @@ const DB_CONNECTION = process.env.DB_CONNECTION;
 // Middlewares
 app.use(
   cors({
-    origin: ["https://result-management-system-mern.vercel.app/"],
+    origin: "https://result-management-system-mern.vercel.app",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
   })
