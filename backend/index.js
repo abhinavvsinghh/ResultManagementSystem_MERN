@@ -14,13 +14,7 @@ const PORT = process.env.PORT || 3000;
 const DB_CONNECTION = process.env.DB_CONNECTION;
 
 // Middlewares
-app.use(
-  cors({
-    origin: "*", // Allow all origins (for testing purposes)
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -30,9 +24,9 @@ connectMongoDB(DB_CONNECTION)
   .catch((error) => console.log("Mongo Error", error));
 
 // Routes
-app.get('/',(req,res)=>{
-  res.json('Hello');
-})
+app.get("/", (req, res) => {
+  res.json("Hello");
+});
 app.use("/student", studentRouter);
 app.use("/teacher", teacherRouter);
 
